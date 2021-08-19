@@ -229,10 +229,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    margin: -10px;
   }
   .partners-list__item {
-    width: calc((100%-20px * 2) / 3);
+    width: 229px;
     height: 120px;
     border: 1px solid #ebebf1;
     box-sizing: border-box;
@@ -245,9 +244,18 @@ header {
     height: 64px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .partners-list__item:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  .partners-list__item:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   .partners-list {
+    max-width: 1170px;
   }
   .partners-list__item {
     width: 270px;
@@ -256,5 +264,12 @@ header {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 15px;
+  }
+
+  .partners-list__item:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+  .partners-list__item:nth-child(4n + 4) {
+    margin-right: 0;
   }
 }
