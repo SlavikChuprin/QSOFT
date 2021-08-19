@@ -179,3 +179,25 @@ header {
     width: 763px;
   }
 }
+
+.partnters {
+  padding-top: 70px;
+}
+.partners-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--color-tittle);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .partners-title {
+    font-size: 36px;
+  }
+}
