@@ -202,19 +202,7 @@ header {
     0px 0px 10px rgba(164, 164, 164, 0.03);
   outline: none;
 }
-@media screen and (min-width: 1440px) {
-  .partners-title {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }
-}
-.partners-list__link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 @media screen and (max-width: 767px) {
   .partners-list__item {
     max-width: 335px;
@@ -256,6 +244,19 @@ header {
     width: 117px;
     height: 64px;
   }
+}
+@media screen and (min-width: 1440px) {
+  .partners-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+}
+.partners-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .partners-list__item:nth-child(3n + 1) {
