@@ -1,0 +1,161 @@
+:root {
+  --bgcolor: #ffffff;
+  --color-tittle: #121920;
+  --main-text: #768298;
+  --smartfon: 375px;
+  --tablet: 768px;
+  --desktop: 1440px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--main-text);
+  background-color: var(--bgcolor);
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    display: none;
+  }
+  .icon-profile {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-profile {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  .profile__icon-avatar {
+    margin-left: 10px;
+  }
+}
+.logo {
+  width: 135px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper-header {
+    border-bottom: 1px solid rgba(187, 196, 214, 1);
+  }
+}
+
+header {
+  position: relative;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 767px) {
+  .search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+    border: none;
+
+    font-size: 14px;
+    line-height: 1.14;
+    color: #bbc4d6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+    border: none;
+
+    font-size: 14px;
+    line-height: 1.14;
+    color: #bbc4d6;
+  }
+}

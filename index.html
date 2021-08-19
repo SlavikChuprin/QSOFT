@@ -4,23 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./main.css">
     <title>QSOFT</title>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-    <a href="#">
-        <svg width=30px, height=30px>
-            <use href="./image/icon.svg#icon-logo"></use>   
-        </svg>
-    </a>
+        <div class="wrapper-header">
+        
+            <div class="header container">
+        <a href="#" class="logo">
+            <svg width="135px" height="30px" class="logo__icon">
+                <use href="./image/icon.svg#icon-logo"></use>   
+            </svg>
+        </a>
 
-    <svg width=24px, height=24px>
-        <use href="./image/icon.svg#icon-profile"></use>   
-    </svg>
-    <form action="">
-        <input type="text" name="search" placeholder="Найти" class="serach">
-    </form>
+        <div class="profile">
+            <p class="profile__name">Константин</p>
+            <img class="profile__icon-avatar" srcset="./image/profile-1x-tablet.png 1x, ./image/profile-2x-tablet.png 2x"
+            src="./image/profile-1x-tablet.png" alt="avatar">
+        </div>
+        <svg width="24px" height="24px" class="icon-profile">
+            <use href="./image/icon.svg#icon-profile"></use>   
+        </svg>
+            </div>
+        </div>
+            
+        <div class="search-wrapper container">
+        <svg  width="24px" height="24px">
+            <use href="./image/icon.svg#icon-search"></use>
+        </svg>
+        <input type="text" name="search" placeholder="Найти..." class="search ">
+        </div>
     </header>
+
+    <main>
+            <!-- HERO -->
+         <div class="container">
+            <h1>наши партнеры</h1>
+            <ul>
+                <li><a href="https://www.henkel.ru">
+                    <svg alt="Henkel">
+                        <use href="./image/icon.svg#icon-henkel"></use>
+                    </svg>
+                <li><a href="https://www.deere.ru/ru/">
+                    <img srcset="./image/jd-1x-mobile.png 1x,./image/jd-2x-mobile.png 2x"
+                    src="./image/jd-1x-mobile.png" alt="John Deer"></a></li>
+                <li><a href="https://mcdonalds.ru">
+                    <img srcset="./image/mc-1x-mobile.png 1x,./image/mc-2x-mobile.png 2x"
+                    src="./image/mc-1x-mobile.png" alt="McDonalds"></a></li>
+                <li><a href="https://www.ikea.com/ru/ru/">
+                    <img srcset="./image/ikea-1x-mobile.png 1x, ./image/ikea-2x-mobile.png 2x"
+                    src="./image/ikea-1x-mobile.png" alt="Ikea"></a></li>
+                <li><a href="https://www.reebok.ru">
+                    <img srcset="./image/reebok-1x-mobile.png 1x, ./image/reebok-2x-mobile.png 2x"
+                    src="./image/reebok-1x-mobile.png" alt="Reebok"></a></li>
+                <li><a href="https://www.nike.com/ru/">
+                    <img srcset="./image/nike-1x-mobile.png 1x, ./image/nike-2x-mobile.png 2x"
+                    src="./image/nike-1x-mobile.png" alt="Nike"></a></li>
+                <li><a href="https://www.cat.com/ru_RU.html">
+                    <img srcset="./image/cat-1x-mobile.png 1x, ./image/cat-2x-mobile.png 2x"
+                    src="./image/cat-1x-mobile.png" alt="CATERPILLAR"></a></li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
