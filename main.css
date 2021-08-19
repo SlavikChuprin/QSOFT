@@ -137,6 +137,9 @@ header {
   padding: 0;
   border: none;
 }
+.search::placeholder {
+  color: #bbc4d6;
+}
 @media screen and (max-width: 767px) {
   .search-wrapper {
     display: flex;
@@ -173,7 +176,8 @@ header {
     height: 38px;
   }
   .search__icon {
-    margin-left: 14px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 }
 
